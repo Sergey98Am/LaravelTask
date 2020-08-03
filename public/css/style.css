@@ -1,0 +1,134 @@
+#wrap {
+    display: none;
+}
+
+.wrap {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, .4);
+    z-index: 9999;
+}
+
+.loader {
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+    border-width: 75px;
+    border-style: solid;
+    animation: borders 1s linear infinite;
+}
+
+@keyframes borders {
+    0% {
+        border-top-color: #00FF5C;
+        border-left-color: #397f1f;
+        border-bottom-color: #3d566e;
+        border-right-color: #34495e;
+    }
+
+    20% {
+        border-left-color: #00FF5C;
+        border-bottom-color: #46637f;
+        border-right-color: #3d566e;
+        border-top-color: #34495e;
+    }
+
+    40% {
+        border-bottom-color: #00FF5C;
+        border-right-color: #46637f;
+        border-top-color: #3d566e;
+        border-left-color: #34495e;
+    }
+
+    80% {
+        border-right-color: #00FF5C;
+        border-top-color: #46637f;
+        border-left-color: #3d566e;
+        border-bottom-color: #34495e;
+    }
+
+    100% {
+        border-top-color: #00FF5C;
+        border-left-color: #46637f;
+        border-bottom-color: #3d566e;
+        border-right-color: #34495e;
+    }
+}
+#app .navbar button{
+    background: none;
+    border: none;
+}
+.help-block {
+    color: red;
+    font-size: 14px;
+}
+
+.input_border {
+    border: 1px solid red;
+}
+.accordion_title{
+    display: flex;
+}
+#dragdrop .well {
+    padding: 8px;
+    border: 0;
+    background: #e0e0e0;
+}
+#dragdrop .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sortable-list {
+    background-color: #fff;
+    list-style: none;
+
+    min-height: 30px;
+    padding: 5px;
+}
+.dragbleList {
+    max-height: 400px;
+    overflow: auto;
+}
+.sortable-list {
+    background-color: #fff;
+    list-style: none;
+    min-height: 30px;
+    padding: 5px;
+}
+.sortable-item {
+    background: #f1f1f1 ;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+    padding: 6px 6px 6px 24px;
+    color: #5a5a5a;
+    font-size: 12px;
+}
+.update_delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.update_delete_task{
+    background: none;
+    border: none;
+}
+.update_delete_task:hover{
+    transition: .2s;
+    transform: scale(1.4);
+}
+.all_comments .card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
